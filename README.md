@@ -1,6 +1,8 @@
 ## HACKATHONE ONE
 
-For Live site preview, [click here](https://hackathon-ecom.vercel.app/)
+In this Project you will learn how to implement Redux, api implementation, how to use vercel's postgress Database via Drizzle ORM, stripe integration and how to delete an order if the stripe checkout completes.
+
+For Each step Implementation, a new branch will be created, and it's link will be provided here.
 
 **I have used**
 

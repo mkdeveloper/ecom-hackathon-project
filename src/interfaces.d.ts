@@ -1,3 +1,5 @@
+import { Image } from "sanity";
+
 export interface SanityProducts {
   _id: string;
   name: string;
@@ -10,4 +12,15 @@ export interface SanityProducts {
   };
   image: Array<Image>;
   subcat: string;
+}
+
+export interface Product {
+  _id: string;
+  name: string;
+  price: number;
+  totalPrice: number;
+  subcat: string;
+  image: Array<Image>;
+  userId: string;
+  quantity: number;
 }

@@ -1,6 +1,7 @@
 import { Navbar, Footer } from "@/components/sections";
 import "./globals.css";
 import { Sora } from "next/font/google";
+import ReduxProvider from "@/components/utils/ReduxProvider";
 
 const sora = Sora({ subsets: ["latin"], style: "normal" });
 
@@ -15,12 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={sora.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ReduxProvider>
+      <html lang="en">
+        <body className={sora.className}>
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ReduxProvider>
   );
 }
